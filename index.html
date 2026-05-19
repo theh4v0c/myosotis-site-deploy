@@ -192,8 +192,8 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 }
 
 @media(max-width:968px){
-.hero-bg{width:100%;opacity:.25}
-.hero-bg::after{background:linear-gradient(180deg,rgba(250,249,247,.85) 0%,rgba(250,249,247,.4) 100%)}
+.hero-bg{width:100%;opacity:.3;background-position:center 20%!important}
+.hero-bg::after{background:linear-gradient(180deg,rgba(250,249,247,.9) 0%,rgba(250,249,247,.5) 60%,rgba(250,249,247,.3) 100%)}
 .hero-text{max-width:100%}
 .strip-inner{grid-template-columns:1fr;gap:40px}
 .strip-col{padding:0}
@@ -213,11 +213,12 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 .hero-text{padding:100px 0 60px;max-width:100%}
 .collections-inner,.story-inner,.visit-inner,.categories-inner,.strip-inner{padding-left:20px;padding-right:20px}
 .collections-grid{grid-template-columns:1fr}
-.collection-card{padding:28px;aspect-ratio:3/4}
-.collection-card:first-child{aspect-ratio:3/4}
+.collection-card{padding:28px;aspect-ratio:4/3}
+.collection-card:first-child{aspect-ratio:4/3}
 .collection-card-title{font-size:1.3rem}
+.collection-card-bg{background-position:center 20%!important}
 .cat-grid{grid-template-columns:1fr 1fr}
-.cat-item{aspect-ratio:4/5;padding:20px}
+.cat-item{aspect-ratio:3/4;padding:20px}
 .brand-quote{padding:80px 0}
 .story{padding:80px 0}
 .visit{padding:80px 0}
@@ -230,7 +231,9 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 
 @media(max-width:480px){
 .cat-grid{grid-template-columns:1fr}
-.cat-item{aspect-ratio:3/2}
+.cat-item{aspect-ratio:16/9}
+.collection-card{aspect-ratio:16/10!important}
+.collection-card:first-child{aspect-ratio:16/10!important}
 .strip-inner{gap:32px}
 .hero-title{font-size:2.2rem!important}
 .strip-number{font-size:2.4rem}
@@ -356,7 +359,7 @@ Manda "quero" no WhatsApp
 <section class="story" id="historia">
 <div class="story-inner">
 <div class="story-image">
-<div class="story-image-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&h=1200&q=80')"></div>
+<div class="story-image-bg" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&h=1200&q=80')"></div>
 <div class="story-image-overlay"></div>
 </div>
 <div class="story-content">
@@ -393,7 +396,7 @@ Manda "quero" no WhatsApp
 </a>
 
 <a href="https://wa.me/5561XXXXXXXXX?text=masculino" class="cat-item" rel="noopener">
-<div class="cat-item-bg" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&h=800&q=80')"></div>
+<div class="cat-item-bg" style="background-image:url('https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=600&h=800&q=80')"></div>
 <div class="cat-item-overlay"></div>
 <div class="cat-item-eyebrow">Masculino</div>
 <div class="cat-item-name">Moda Masculina</div>
@@ -436,7 +439,7 @@ Manda "quero" no WhatsApp
 </ul>
 </div>
 <div class="visit-map">
-<div class="visit-map-bg" style="background-image:url('https://images.unsplash.com/photo-1528459105426-b9548367069b?auto=format&fit=crop&w=800&h=600&q=80')"></div>
+<div class="visit-map-bg" style="background-image:url('https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&h=600&q=80')"></div>
 <div class="visit-map-overlay">
 <div class="visit-map-placeholder">
 Sobradinho-DF
