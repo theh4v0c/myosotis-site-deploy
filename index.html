@@ -69,7 +69,7 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 
 /* ===== HERO ===== */
 .hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--cream)}
-.hero-bg{position:absolute;top:0;right:0;bottom:0;width:55%;background-size:cover;background-position:center;background-color:var(--sand)}
+.hero-bg{position:absolute;top:0;right:0;bottom:0;width:55%;background-size:cover;background-position:center 30%;background-color:var(--sand)}
 .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--cream) 0%,rgba(250,249,247,.6) 40%,rgba(250,249,247,.2) 100%)}
 .hero-inner{max-width:1400px;margin:0 auto;padding:0 40px;width:100%;position:relative;z-index:2;display:flex;align-items:center;min-height:100vh;min-height:100dvh}
 .hero-text{max-width:560px;padding:120px 0 80px}
@@ -101,9 +101,9 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:400;line-height:1.2;margin-bottom:48px}
 .section-title em{font-style:italic;color:var(--navy)}
 .collections-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.collection-card{position:relative;overflow:hidden;aspect-ratio:3/4;background:var(--sand);text-decoration:none;color:var(--text);display:flex;flex-direction:column;justify-content:flex-end;padding:32px;transition:transform .5s}
-.collection-card:first-child{aspect-ratio:auto;grid-row:span 2}
-.collection-card-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s}
+.collection-card{position:relative;overflow:hidden;aspect-ratio:4/5;background:var(--sand);text-decoration:none;color:var(--text);display:flex;flex-direction:column;justify-content:flex-end;padding:32px;transition:transform .5s}
+.collection-card:first-child{aspect-ratio:auto;grid-row:span 1}
+.collection-card-bg{position:absolute;inset:0;background-size:cover;background-position:center top;transition:transform .6s}
 .collection-card:hover .collection-card-bg{transform:scale(1.03)}
 .collection-card-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(26,82,118,.75) 0%,rgba(26,82,118,.15) 50%,rgba(26,82,118,.05) 100%);transition:opacity .3s}
 .collection-card:hover .collection-card-overlay{opacity:.9}
@@ -116,7 +116,7 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 /* ===== STORY ===== */
 .story{padding:120px 0;background:var(--cream)}
 .story-inner{max-width:1400px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.story-image{aspect-ratio:3/4;border-radius:4px;overflow:hidden;position:relative}
+.story-image{aspect-ratio:4/5;border-radius:4px;overflow:hidden;position:relative}
 .story-image-bg{position:absolute;inset:0;background-size:cover;background-position:center}
 .story-image-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(26,82,118,.4) 100%)}
 .story-content{}
@@ -192,7 +192,7 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 }
 
 @media(max-width:968px){
-.hero-bg{width:100%;opacity:.18}
+.hero-bg{width:100%;opacity:.25}
 .hero-bg::after{background:linear-gradient(180deg,rgba(250,249,247,.85) 0%,rgba(250,249,247,.4) 100%)}
 .hero-text{max-width:100%}
 .strip-inner{grid-template-columns:1fr;gap:40px}
@@ -273,7 +273,7 @@ Falar conosco
 
 <!-- Hero -->
 <section class="hero" id="hero">
-<div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1441986300917-64674bd600e8?auto=format&fit=crop&w=1400&h=900&q=80')"></div>
+<div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1400&h=900&q=80')"></div>
 <div class="hero-inner">
 <div class="hero-text">
 <div class="hero-eyebrow">Sobradinho-DF · Desde 1989</div>
@@ -329,7 +329,7 @@ Manda "quero" no WhatsApp
 </a>
 
 <a href="https://wa.me/5561XXXXXXXXX?text=masculino" class="collection-card" rel="noopener">
-<div class="collection-card-bg" style="background-image:url('https://images.unsplash.com/photo-1617137968377-cc519c453fd3?auto=format&fit=crop&w=800&h=1200&q=80')"></div>
+<div class="collection-card-bg" style="background-image:url('https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=800&h=1200&q=80')"></div>
 <div class="collection-card-overlay"></div>
 <div class="collection-card-content">
 <div class="collection-card-cat">Masculino</div>
@@ -339,7 +339,7 @@ Manda "quero" no WhatsApp
 </a>
 
 <a href="https://wa.me/5561XXXXXXXXX?text=infantil" class="collection-card" rel="noopener">
-<div class="collection-card-bg" style="background-image:url('https://images.unsplash.com/photo-1519689680058-324335c8eba4?auto=format&fit=crop&w=800&h=1200&q=80')"></div>
+<div class="collection-card-bg" style="background-image:url('https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=800&h=1200&q=80')"></div>
 <div class="collection-card-overlay"></div>
 <div class="collection-card-content">
 <div class="collection-card-cat">Infantil</div>
@@ -385,7 +385,7 @@ Manda "quero" no WhatsApp
 <div class="cat-grid">
 
 <a href="https://wa.me/5561XXXXXXXXX?text=feminino" class="cat-item" rel="noopener">
-<div class="cat-item-bg" style="background-image:url('https://images.unsplash.com/photo-1485968579580-b6d095142e6d?auto=format&fit=crop&w=600&h=800&q=80')"></div>
+<div class="cat-item-bg" style="background-image:url('https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&h=800&q=80')"></div>
 <div class="cat-item-overlay"></div>
 <div class="cat-item-eyebrow">Feminino</div>
 <div class="cat-item-name">Moda Feminina</div>
@@ -393,7 +393,7 @@ Manda "quero" no WhatsApp
 </a>
 
 <a href="https://wa.me/5561XXXXXXXXX?text=masculino" class="cat-item" rel="noopener">
-<div class="cat-item-bg" style="background-image:url('https://images.unsplash.com/photo-1490578474895-699cd4e2cf8c?auto=format&fit=crop&w=600&h=800&q=80')"></div>
+<div class="cat-item-bg" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&h=800&q=80')"></div>
 <div class="cat-item-overlay"></div>
 <div class="cat-item-eyebrow">Masculino</div>
 <div class="cat-item-name">Moda Masculina</div>
@@ -409,7 +409,7 @@ Manda "quero" no WhatsApp
 </a>
 
 <a href="https://wa.me/5561XXXXXXXXX?text=plus" class="cat-item" rel="noopener">
-<div class="cat-item-bg" style="background-image:url('https://images.unsplash.com/photo-1496747611176-843222e1c572?auto=format&fit=crop&w=600&h=800&q=80')"></div>
+<div class="cat-item-bg" style="background-image:url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&h=800&q=80')"></div>
 <div class="cat-item-overlay"></div>
 <div class="cat-item-eyebrow">Plus Size</div>
 <div class="cat-item-name">Plus Size</div>
@@ -436,7 +436,7 @@ Manda "quero" no WhatsApp
 </ul>
 </div>
 <div class="visit-map">
-<div class="visit-map-bg" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2850563e5fc?auto=format&fit=crop&w=800&h=600&q=80')"></div>
+<div class="visit-map-bg" style="background-image:url('https://images.unsplash.com/photo-1528459105426-b9548367069b?auto=format&fit=crop&w=800&h=600&q=80')"></div>
 <div class="visit-map-overlay">
 <div class="visit-map-placeholder">
 Sobradinho-DF
