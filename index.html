@@ -86,12 +86,12 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 .btn-outline:hover{background:var(--text);color:var(--white)}
 
 /* ===== EDITORIAL STRIP ===== */
-.strip{padding:80px 0;background:var(--white);border-bottom:1px solid var(--border)}
-.strip-inner{max-width:1400px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px}
-.strip-col{text-align:center;padding:0 20px}
-.strip-number{font-family:'Playfair Display',serif;font-size:3.2rem;font-weight:400;color:var(--navy);line-height:1;margin-bottom:8px}
-.strip-label{font-size:.65rem;font-weight:500;text-transform:uppercase;letter-spacing:.2em;color:var(--text3);margin-bottom:8px}
-.strip-desc{font-size:.85rem;color:var(--text2);line-height:1.6}
+
+
+
+
+
+
 
 /* ===== COLLECTIONS ===== */
 .collections{padding:100px 0;background:var(--white)}
@@ -162,12 +162,12 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 .visit-details li{padding:14px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:.85rem}
 .visit-details li span:first-child{font-size:.65rem;font-weight:500;text-transform:uppercase;letter-spacing:.18em;color:var(--text3);min-width:80px}
 .visit-details li span:last-child{color:var(--text);text-align:right}
-.visit-map{aspect-ratio:4/3;border-radius:4px;overflow:hidden;min-height:400px;position:relative}
-.visit-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.visit-map-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-color:var(--sand)}
-.visit-map-overlay{position:absolute;inset:0;background:rgba(242,237,232,.85);display:flex;align-items:center;justify-content:center;text-align:center}
-.visit-map-placeholder{font-family:'Playfair Display',serif;font-style:italic;color:var(--text3);font-size:1.1rem}
-.visit-map-placeholder span{display:block;font-family:'Manrope',sans-serif;font-size:.6rem;font-weight:500;text-transform:uppercase;letter-spacing:.2em;margin-top:12px}
+.visit-card{background:var(--white);border:1px solid var(--border);border-radius:4px;padding:40px 32px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px;min-height:320px;justify-content:center}.visit-ig-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:1.1rem;font-weight:500;transition:color .2s}.visit-ig-link:hover{color:var(--navy)}.visit-ig-link svg{color:var(--navy)}.visit-card-text{font-family:'Playfair Display',serif;font-style:italic;color:var(--text2);font-size:1rem;line-height:1.7;max-width:280px}
+
+
+
+
+
 
 /* ===== FOOTER ===== */
 .site-footer{background:var(--text);color:rgba(255,255,255,.7)}
@@ -195,12 +195,11 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 .hero-bg{width:100%;opacity:.3;background-position:center 20%!important}
 .hero-bg::after{background:linear-gradient(180deg,rgba(250,249,247,.9) 0%,rgba(250,249,247,.5) 60%,rgba(250,249,247,.3) 100%)}
 .hero-text{max-width:100%}
-.strip-inner{grid-template-columns:1fr;gap:40px}
-.strip-col{padding:0}
+
 .story-inner{grid-template-columns:1fr;gap:48px}
 .story-image{aspect-ratio:16/9;order:-1}
 .visit-inner{grid-template-columns:1fr}
-.visit-map{min-height:300px;aspect-ratio:16/9}
+.visit-card{min-height:auto;padding:32px 24px}
 .footer-main{grid-template-columns:1fr 1fr;gap:36px}
 .header-nav{display:none}
 .mobile-toggle{display:flex;flex-direction:column;justify-content:space-between}
@@ -222,7 +221,7 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 .brand-quote{padding:80px 0}
 .story{padding:80px 0}
 .visit{padding:80px 0}
-.strip{padding:60px 0}
+
 .hero-actions{flex-direction:column;width:100%}
 .btn-dark,.btn-outline{justify-content:center;width:100%;text-align:center}
 .footer-main{grid-template-columns:1fr;gap:28px;padding:48px 20px}
@@ -234,7 +233,7 @@ body{font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--w
 .cat-item{aspect-ratio:16/9}
 .collection-card{aspect-ratio:16/10!important}
 .collection-card:first-child{aspect-ratio:16/10!important}
-.strip-inner{gap:32px}
+
 .hero-title{font-size:2.2rem!important}
 .strip-number{font-size:2.4rem}
 .visit-details li{flex-direction:column;align-items:flex-start;gap:4px}
@@ -294,25 +293,7 @@ Manda "quero" no WhatsApp
 </section>
 
 <!-- Editorial Strip -->
-<section class="strip">
-<div class="strip-inner">
-<div class="strip-col">
-<div class="strip-number">37</div>
-<div class="strip-label">Anos vestindo Sobradinho</div>
-<div class="strip-desc">Desde 1989, conhecendo cada estacao, cada cliente, cada madrugada fria e tarde quente desta cidade.</div>
-</div>
-<div class="strip-col">
-<div class="strip-number">1.100m</div>
-<div class="strip-label">Altitude de verdade</div>
-<div class="strip-desc">Frio real. Madrugada de 14 graus, tarde de 27. Quem vive aqui sabe: a roupa certa importa.</div>
-</div>
-<div class="strip-col">
-<div class="strip-number">5min</div>
-<div class="strip-label">Resposta imediata</div>
-<div class="strip-desc">Mandou mensagem, a gente responde em ate 5 minutos. Foto real. Preco. Chave Pix. Zero atrito.</div>
-</div>
-</div>
-</section>
+
 
 <!-- Collections -->
 <section class="collections" id="colecoes">
@@ -438,14 +419,12 @@ Manda "quero" no WhatsApp
 <li><span>Instagram</span><span>@myosotisdf</span></li>
 </ul>
 </div>
-<div class="visit-map">
-<div class="visit-map-bg" style="background-image:url('https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&h=600&q=80')"></div>
-<div class="visit-map-overlay">
-<div class="visit-map-placeholder">
-Sobradinho-DF
-<span>Google Maps embed</span>
-</div>
-</div>
+<div class="visit-card">
+<a href="https://www.instagram.com/myosotisdf/" target="_blank" rel="noopener" class="visit-ig-link">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+<span>@myosotisdf</span>
+</a>
+<p class="visit-card-text">Siga no Instagram pra ver as pecas em tempo real. Toda semana tem chegada nova.</p>
 </div>
 </div>
 </section>
